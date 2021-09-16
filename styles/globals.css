@@ -1,16 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
+label{
+  display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: hsl(184, 14%, 56%);
+}
+label input{
+  
+  border-radius: 5px;
+  border-color: hsl(172, 67%, 45%);
+  font-size: 24px;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  background-image: url(../public/dollar-sign-solid.svg);
+  background-size: 10px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  text-align: right;
+  font-weight: 900;
+}
+p{
+color: hsl(184, 14%, 56%)
+}
+h2{
+  font-size: medium;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button{
+  background-color: hsl(172, 67%, 45%);
+  width: 40%;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  height: 50px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+button:hover{
+  background-color: hsl(172, 69%, 24%);
+ color: hsl(0, 0%, 100%);
+}
 * {
   box-sizing: border-box;
 }
